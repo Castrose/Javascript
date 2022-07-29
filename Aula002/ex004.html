@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var n1 = Number(window.prompt('Qual é o seu salário?'))
+        var n2 = Number(window.prompt('O quanto você gasta por mês?'))
+        var n3 = n1 - n2
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem  ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong><br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br>`)
+        document.write(`O seu dinheiro restante para o mês é ${n3.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+    </script>
+</body>
+</html>

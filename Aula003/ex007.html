@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        input#tn1, input#tn2 {
+            position: relative;
+            width: 50%;
+            border: none;
+            padding: 5px;
+        }
+
+        .container {
+            background-color: aquamarine;
+            border-radius: 20px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+        }
+
+        div#res {
+            background-color: lightgreen;
+            border-radius: 20px;
+            border: 1px solid green;
+            margin-top: 20px;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .button {
+            background: white;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 200ms ease;
+        }
+
+        .button:hover {
+            background: lightgrey;
+            transition: 200ms ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Somando valores</h1>
+        <div class="inputs">
+            <input placeholder="Primeiro Número" type="number" name="tn1" id="tn1">
+            <input placeholder="Segundo número" type="number" name="tn2" id="tn2">
+            <input class="button" type="button" value="Somar" onclick="somar()">
+        </div>
+        <div id="res">Resultado...</div>
+    </div>
+    <script>
+        
+        function somar(){    
+        var tn1 = window.document.getElementById('tn1')
+        var tn2 = window.document.getElementById('tn2')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `${s}`
+        }
+    </script>
+</body>
+</html>
