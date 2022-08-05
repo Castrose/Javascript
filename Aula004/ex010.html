@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>
+        <label for="txtvel">Velocidade do Carro (Km/h): </label>
+        <input type="number" name="txtvel" id="txtvel">
+    </p>
+    <p>
+        <input type="button" value="Verificar" onclick="calcular()">
+    </p>
+    <div id="res"></div>
+    <script>
+
+        function calcular() {
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `Sua velocidade atual é de ${vel}Km/h`
+            if (vel > 60) {
+                res.innerHTML = `Você ultrapassou a velocidade autorizada. MULTADO!`
+            }
+            res.innerHTML += `<p>Diriga sempre com sinto de segurança!</p>`
+        } 
+
+    </script>
+</body>
+</html>
