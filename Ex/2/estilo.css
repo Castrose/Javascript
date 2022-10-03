@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(88, 146, 165);
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    width: 90vw;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.712);
+}
+
+footer {
+    margin: 30px;
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+}
+
+#verificar {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#verificar:hover {
+    background-color: skyblue;
+    color: black;
+}
