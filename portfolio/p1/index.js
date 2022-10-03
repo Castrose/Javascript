@@ -12,7 +12,7 @@ function save() {
 }
 
 function reset(){
+    count = 0
     inctxt.innerHTML = ''
     countEl.innerHTML = '0'
-
-}
+} 
