@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: #005C53;
+}
+
+.main {
+    border-radius: 10px;
+}
+
+.main > h1 {
+    margin: 10px;
+    color: #9FC131;     
+    font-size: 50px;
+    
+}
+
+.main > p {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    background-color: #DBF227;
+    border-radius: 5px;
+    color: #005C53;
+    font-weight: bolder;
+    width: 150px;
+    cursor: pointer;
+}
